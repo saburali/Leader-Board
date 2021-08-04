@@ -34,9 +34,11 @@ hr {
 }
 
 h4 {
-    font-size: 18px;
-    font-weight: 500;
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: 600;
     line-height: 27px;
+    letter-spacing: 2px;
 }
 
 .title {
@@ -279,4 +281,33 @@ header {
         grid-row-gap: 20px;
         grid-template-columns: repeat(1, 1fr);
     }
+}
+
+
+/*---------------------------\
+        Top Blogs Start
+\---------------------------*/
+.top-blogs .blogs {
+    display: grid;
+    grid-row-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.top-blogs .blog {
+    display: flex;
+    align-items: center;
+}
+
+.top-blogs .blog img {
+    width: 200px;
+    border-radius: 15px;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+}
+
+.top-blogs .blog-content {
+    padding-left: 25px;
+}
+
+.top-blogs .blog-content span {
+    display: inline-block;
 }
