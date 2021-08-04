@@ -314,6 +314,21 @@ header {
     display: inline-block;
 }
 
+/* Responsive */
+@media only screen and (max-width: 767px) {
+    .top-blogs .blogs {
+        grid-row-gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .top-blogs .blog-content {
+        font-size: 15px;
+    }
+    
+    .top-blogs .blog-content br {
+        display: none;
+    }
+}
 
 /*---------------------------\
      Bottom Section Start
