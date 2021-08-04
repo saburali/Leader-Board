@@ -330,6 +330,26 @@ header {
     }
 }
 
+@media only screen and (max-width: 575px) {
+    .top-blogs .blog {
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    .top-blogs .blog-content {
+        padding-left: 0;
+    }
+    
+    .top-blogs .blog-content h4 {
+        letter-spacing: 0;
+        margin-bottom: 6px;
+    }
+    
+    .top-blogs .blog img {
+        width: 100%;
+    }
+}
+
 /*---------------------------\
      Bottom Section Start
 \---------------------------*/
