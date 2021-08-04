@@ -68,3 +68,65 @@ h4 {
         width: 1170px;
     }
 }
+
+/*---------------------------\
+        Navbar Start
+\---------------------------*/
+header {
+    height: 94px;
+    background-color: var(--themeColor);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight: 500;
+    padding-left: 12px;
+    color: var(--white);
+}
+
+.navbar .menu {
+    display: flex;
+    align-items: center
+}
+
+.navbar .menu li {
+    list-style: none;
+}
+
+.navbar .menu li img {
+    height: 50px;
+    padding-top: 4px;
+}
+
+.navbar .menu li a {
+    opacity: 0.8;
+    font-size: 18px;
+    padding: 10px 25px;
+    border-radius: 6px;
+    margin-right: 12px;
+    color: var(--white);
+    transition: 0.4s all ease-in-out;
+}
+
+.navbar .menu li:hover a {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.navbar .menu li:last-child a {
+    background-color: transparent !important;
+}
