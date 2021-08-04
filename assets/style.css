@@ -80,6 +80,8 @@ header {
 .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 94px;
 }
 
 .navbar .logo {
@@ -129,4 +131,91 @@ header {
 
 .navbar .menu li:last-child a {
     background-color: transparent !important;
+}
+
+.navbar .menu li:last-child a span {
+    display: none;
+}
+
+/* Responsive */
+/* Toggle Button */
+.chk-btn {
+    float: right;
+}
+
+.chk-btn img {
+    width: 22px;
+    display: none;
+    margin-right: 20px;
+}
+
+#chk {
+    z-index: -9;
+    display: none;
+    visibility: hidden;
+    position: absolute;
+}
+
+
+/* Responsive Navbar */
+@media only screen and (max-width: 767px) {
+    .logo img {
+        width: 32px;
+    }
+
+    .logo span {
+        font-size: 18px;
+    }
+
+    .navbar .logo {
+        display: flex;
+        align-items: center;
+        margin-left: -25px;
+    }
+
+    .navbar .menu {
+        left: 0;
+        right: 0;
+        top: 78px;
+        padding: 0;
+        height: 0px;
+        width: 100%;
+        z-index: -99;
+        display: block;
+        position: fixed;
+        transition: 0.7s;
+        overflow-y: hidden;
+        text-align: center;
+        line-height: normal;
+        background-color: #4422d4;
+        box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+    }
+
+    .navbar .menu li a {
+        display: block;
+        font-size: 30px;
+        padding: 40px 25px;
+    }
+
+    .navbar .menu li:last-child a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar .menu li:last-child a img {
+        padding-right: 18px;
+    }
+
+    .navbar #chk {
+        display: block;
+    }
+
+    .navbar #chk:checked ~ .menu {
+        height: 88vh;
+    }
+
+    .navbar .chk-btn img {
+        display: block;
+    }
 }
