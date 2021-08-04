@@ -193,7 +193,6 @@ header {
         padding: 0;
         height: 0px;
         width: 100%;
-        z-index: -99;
         display: block;
         position: fixed;
         transition: 0.7s;
@@ -229,6 +228,10 @@ header {
     }
 
     .navbar .chk-btn img {
+        display: block;
+    }
+
+    .navbar .menu li:last-child a span {
         display: block;
     }
 }
@@ -335,16 +338,16 @@ header {
         display: block;
         margin-bottom: 10px;
     }
-    
+
     .top-blogs .blog-content {
         padding-left: 0;
     }
-    
+
     .top-blogs .blog-content h4 {
         letter-spacing: 0;
         margin-bottom: 6px;
     }
-    
+
     .top-blogs .blog img {
         width: 100%;
     }
@@ -426,7 +429,7 @@ header {
         grid-row-gap: 20px;
         grid-template-columns: repeat(1, 1fr);
     }
-    
+
     .latesCourse h3 {
         letter-spacing: 0px;
     }
