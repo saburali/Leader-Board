@@ -26,6 +26,13 @@ a {
     text-decoration: none;
 }
 
+hr {
+    height: 1px;
+    margin: 35px 0;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+    background-color: var(--themeColor);
+}
+
 h4 {
     font-size: 18px;
     font-weight: 500;
