@@ -7,9 +7,11 @@
 
 :root {
     --white: #ffffff;
+    --clockBG: #FFE4E8;
     --themeColor: #562eff;
-    --secondaryColor: #9F9F9F;
     --otherColor: #ED6B4F;
+    --reviewColor: #FFC014;
+    --secondaryColor: #9F9F9F;
 }
 
 body {
@@ -310,4 +312,70 @@ header {
 
 .top-blogs .blog-content span {
     display: inline-block;
+}
+
+
+/*---------------------------\
+     Bottom Section Start
+\---------------------------*/
+.bottomSection {
+    padding: 30px;
+    margin: 50px 0;
+    border-radius: 8px;
+    background-color: var(--white);
+}
+
+/*---------------------------\
+  Lates Course Section Start
+\---------------------------*/
+.course {
+    display: flex;
+    justify-content: space-between;
+}
+
+.course .latesCourse {
+    width: 325px;
+}
+
+.course .latesCourse img {
+    width: 100%;
+}
+
+.latesCourse h3 {
+    margin-bottom: 10px;
+    letter-spacing: 1.5px;
+}
+
+.latesCourse .sm-text {
+    margin-top: 0;
+    color: var(--otherColor);
+}
+
+.latesCourse .timing-review {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.latesCourse .timing-review .star i {
+    font-size: 15px;
+    color: var(--reviewColor);
+}
+
+.latesCourse .timing-review .star i.inActive {
+    color: var(--secondaryColor);
+}
+
+.latesCourse .timing-review .star .sm-text {
+    font-size: 10px;
+    padding-left: 4px;
+    display: inline-block;
+}
+
+.latesCourse .timing-review .timing {
+    font-size: 16px;
+    padding: 7px 16px;
+    border-radius: 20px;
+    color: var(--otherColor);
+    background-color: var(--clockBG);
 }
