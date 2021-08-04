@@ -320,11 +320,11 @@ header {
         grid-row-gap: 20px;
         grid-template-columns: repeat(1, 1fr);
     }
-    
+
     .top-blogs .blog-content {
         font-size: 15px;
     }
-    
+
     .top-blogs .blog-content br {
         display: none;
     }
@@ -350,10 +350,14 @@ header {
 
 .course .latesCourse {
     width: 325px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
 }
 
 .course .latesCourse img {
     width: 100%;
+    border-radius: 15px;
 }
 
 .latesCourse h3 {
@@ -393,4 +397,22 @@ header {
     border-radius: 20px;
     color: var(--otherColor);
     background-color: var(--clockBG);
+}
+
+/* Responsive */
+@media only screen and (max-width: 767px) {
+    .course {
+        display: grid;
+        grid-row-gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .course .latesCourse {
+        width: auto;
+        margin-bottom: 25px;
+    }
+
+    .course .latesCourse:last-child {
+        margin-bottom: 0;
+    }
 }
